@@ -1,0 +1,103 @@
+@use './classes';
+@use './variables' as *;
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Kumbh Sans";
+}
+
+body {
+    @include classes.flexCenter(column);
+    margin: 0;
+    padding: 0;
+    background-color: $grayish-blue;
+}
+
+picture img {
+    width: 100%;
+    height: auto;
+}
+
+.container {
+    max-width: 25rem;
+    background-color: $white;
+    box-shadow: 5px 5px 25px $very-dark-blue;
+}
+
+.header_container {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    outline: 1px solid black;
+
+    * {
+        display: flex;
+        gap: 1em;
+    }
+}
+
+.logoIcon {
+    background-image: url(../images/logo.svg);
+    min-width: 7em;
+    @include classes.backgroundImage();
+}
+
+.menuIcon {
+    background-image: url(../images/icon-menu.svg);
+    padding: 0.5em;
+    margin-left: 1em;
+    @include classes.backgroundImage();
+}
+
+.cartIcon {
+    background-image: url(../images/icon-cart.svg);
+    padding: 0.7em;
+    @include classes.backgroundImage();
+}
+
+.avatarIcon {
+    background-image: url(../images/image-avatar.png);
+    padding: 0.75em;
+    margin-right: 1em;
+    @include classes.backgroundImage();
+}
+
+.productImage {
+    @include classes.backgroundImage();
+    display: flex;
+    position: relative;
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    button {
+        @include classes.flexCenter(row);
+        @include classes.backgroundImage();
+        padding: 1rem;
+        border-radius: 100%;
+        border-style: none;
+        position: absolute;
+    }
+}
+
+#left {
+    background-image: url(../images/icon-previous.svg);
+    background-size: 25%;
+    left: 2%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#right {
+    background-image: url(../images/icon-next.svg);
+    background-size: 25%;
+    right: 2%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+

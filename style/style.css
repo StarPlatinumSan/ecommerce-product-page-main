@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Kumbh Sans";
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  background-color: hsl(220, 14%, 75%);
+}
+
+picture img {
+  width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 25rem;
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: 5px 5px 25px hsl(220, 13%, 13%);
+}
+
+.header_container {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  outline: 1px solid black;
+}
+.header_container * {
+  display: flex;
+  gap: 1em;
+}
+
+.logoIcon {
+  background-image: url(../images/logo.svg);
+  min-width: 7em;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.menuIcon {
+  background-image: url(../images/icon-menu.svg);
+  padding: 0.5em;
+  margin-left: 1em;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.cartIcon {
+  background-image: url(../images/icon-cart.svg);
+  padding: 0.7em;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.avatarIcon {
+  background-image: url(../images/image-avatar.png);
+  padding: 0.75em;
+  margin-right: 1em;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.productImage {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  display: flex;
+  position: relative;
+}
+.productImage img {
+  max-width: 100%;
+  height: auto;
+}
+.productImage button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  padding: 1rem;
+  border-radius: 100%;
+  border-style: none;
+  position: absolute;
+}
+
+#left {
+  background-image: url(../images/icon-previous.svg);
+  background-size: 25%;
+  left: 2%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#right {
+  background-image: url(../images/icon-next.svg);
+  background-size: 25%;
+  right: 2%;
+  top: 50%;
+  transform: translateY(-50%);
+}/*# sourceMappingURL=style.css.map */
