@@ -4,20 +4,21 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: "Kumbh Sans";
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden
 }
 
 body {
     @include classes.flexCenter(column);
-    margin: 0;
-    padding: 0;
     background-color: $grayish-blue;
-}
-
-picture img {
-    width: 100%;
-    /* max-width: 25rem; */
-    height: auto;
 }
 
 .container {
@@ -82,7 +83,12 @@ picture img {
         border-radius: 100%;
         border-style: none;
         position: absolute;
+        cursor: pointer;
     }
+}
+
+.thumbnails {
+    display: none;
 }
 
 #imageOfProduct {
@@ -196,6 +202,7 @@ picture img {
     padding-top: 1em;
     padding-bottom: 1em;
     background-color: $orange;
+    cursor: pointer;
 }
 
 
